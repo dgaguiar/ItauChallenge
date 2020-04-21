@@ -10,50 +10,45 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     
-    
     @IBOutlet weak var valuelabel: UILabel!
     @IBOutlet weak var originLabel: UILabel!
     @IBOutlet weak var categoryIcon: UIImageView!
+    @IBOutlet weak var monthLabel: UILabel!
     
-    
-    func setupCell(viewModel: TransactionListResponse) {
+    func setupCell(viewModel: TransactionViewModel) {
         configValue(value: viewModel.value)
         configOrigin(origin: viewModel.origin)
         configIcon(category: viewModel.category)
+        monthLabel.text = viewModel.month
         print("veio na cell")
     }
 
-    func configValue(value: Double) {
-        let formatter = NumberFormatter()
-        let locale = Locale.init(identifier: "pt-BR")
-        formatter.locale = locale
-        formatter.numberStyle = .currency
-        if let formattedTipAmount = formatter.string(from: value as NSNumber) {
-            valuelabel.text = "\(formattedTipAmount)"
-        }
-        
+    private func configValue(value: String) {
         valuelabel.font = .systemFont(ofSize: 14, weight: .bold)
         valuelabel.textColor = UIColor.systemRed
+        valuelabel.text = value
     }
     
-    func configOrigin(origin: String) {
+    private func configOrigin(origin: String) {
         originLabel.text = origin
         originLabel.font = .systemFont(ofSize: 16, weight: .regular)
         originLabel.textColor = UIColor.black
     }
     
-    func configIcon(category: Int) {
+    private func configIcon(category: String) {
         switch category {
-        case 1:
-            categoryIcon.image = UIImage(named: "pay")
-        case 2:
-            categoryIcon.image = UIImage(named: "bag")
-        case 3:
-            categoryIcon.image = UIImage(named: "fuel")
-        case 4:
-            categoryIcon.image = UIImage(named: "pig")
+        case "Transporte":
+            categoryIcon.image = UIImage(systemName: "car")
+        case "Compras Online":
+            categoryIcon.image = UIImage(systemName: "creditcard")
+        case "Saúde e Beleza":
+            categoryIcon.image = UIImage(systemName: "bag")
+        case "Serviços Automotivos":
+            categoryIcon.image = UIImage(systemName: "wrench")
+        case "Restaqurantes":
+            categoryIcon.image = UIImage(systemName: "house")
         default:
-            categoryIcon.image = UIImage(named: "more")
+            categoryIcon.image = UIImage(systemName: "cart")
         }
     }
     

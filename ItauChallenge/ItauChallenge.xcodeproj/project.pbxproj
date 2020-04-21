@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		41507CAB997A34E6CE84D8E6 /* Pods_ItauChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C0ED0C875EE1492405D6C9 /* Pods_ItauChallenge.framework */; };
 		5713AE90244EB6A9005163D7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5713AE8F244EB6A8005163D7 /* TableViewCell.swift */; };
+		574BCAC1244F23CB009D57E7 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAC0244F23CB009D57E7 /* Interactor.swift */; };
+		574BCAC3244F2420009D57E7 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAC2244F2420009D57E7 /* Presenter.swift */; };
+		574BCAC5244F3DFA009D57E7 /* DetailTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAC4244F3DF9009D57E7 /* DetailTransactionViewController.swift */; };
+		574BCAC7244F4B9A009D57E7 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAC6244F4B9A009D57E7 /* TransactionViewModel.swift */; };
 		577BA005244E487C00CC02C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA004244E487C00CC02C7 /* AppDelegate.swift */; };
 		577BA007244E487C00CC02C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA006244E487C00CC02C7 /* SceneDelegate.swift */; };
 		577BA009244E487C00CC02C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA008244E487C00CC02C7 /* ViewController.swift */; };
@@ -24,6 +28,10 @@
 /* Begin PBXFileReference section */
 		0F4662EA9C37D1D94256DA47 /* Pods-ItauChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItauChallenge.release.xcconfig"; path = "Target Support Files/Pods-ItauChallenge/Pods-ItauChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		5713AE8F244EB6A8005163D7 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		574BCAC0244F23CB009D57E7 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		574BCAC2244F2420009D57E7 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		574BCAC4244F3DF9009D57E7 /* DetailTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionViewController.swift; sourceTree = "<group>"; };
+		574BCAC6244F4B9A009D57E7 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
 		577BA001244E487C00CC02C7 /* ItauChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItauChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		577BA004244E487C00CC02C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		577BA006244E487C00CC02C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +107,7 @@
 			children = (
 				577BA01F244E4A7E00CC02C7 /* TransactionListResponse.swift */,
 				577BA021244E4BA100CC02C7 /* CategoryModel.swift */,
+				574BCAC6244F4B9A009D57E7 /* TransactionViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -109,6 +118,9 @@
 				577BA008244E487C00CC02C7 /* ViewController.swift */,
 				5713AE8F244EB6A8005163D7 /* TableViewCell.swift */,
 				577BA024244E56B000CC02C7 /* Storyboard */,
+				574BCAC0244F23CB009D57E7 /* Interactor.swift */,
+				574BCAC2244F2420009D57E7 /* Presenter.swift */,
+				574BCAC4244F3DF9009D57E7 /* DetailTransactionViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -256,11 +268,15 @@
 				577BA00F244E487C00CC02C7 /* ItauChallenge.xcdatamodeld in Sources */,
 				5713AE90244EB6A9005163D7 /* TableViewCell.swift in Sources */,
 				577BA009244E487C00CC02C7 /* ViewController.swift in Sources */,
+				574BCAC1244F23CB009D57E7 /* Interactor.swift in Sources */,
+				574BCAC3244F2420009D57E7 /* Presenter.swift in Sources */,
 				577BA020244E4A7E00CC02C7 /* TransactionListResponse.swift in Sources */,
+				574BCAC5244F3DFA009D57E7 /* DetailTransactionViewController.swift in Sources */,
 				577BA005244E487C00CC02C7 /* AppDelegate.swift in Sources */,
 				577BA022244E4BA100CC02C7 /* CategoryModel.swift in Sources */,
 				577BA01D244E4A4700CC02C7 /* NetworknigConnection.swift in Sources */,
 				577BA007244E487C00CC02C7 /* SceneDelegate.swift in Sources */,
+				574BCAC7244F4B9A009D57E7 /* TransactionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
