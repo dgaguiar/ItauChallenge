@@ -10,11 +10,11 @@ import Foundation
 
 struct TransactionListResponse: Codable {
     
-    let id: Int?
-    let value: Double?
-    let origin: String?
-    let category: Int?
-    let mounth: Int?
+    let id: Int
+    let value: Double
+    let origin: String
+    let category: Int
+    let mounth: Int
     
     enum CodingKeys: String, CodingKey {
         case id

@@ -11,23 +11,26 @@ import Alamofire
 
 
 protocol Service {
-    func fetchTransactions(completion: @escaping ([TransactionListResponse]) -> Void)
-    func gettingData(completion: @escaping ([TransactionListResponse]) -> Void)
+    func fetchTransaction(completion: @escaping ([TransactionListResponse]) -> Void)
+    func conectMovimentacao(userId: Int, completion: @escaping ([TransactionListResponse]) -> Void )
 }
 
 class ConnectionAPI : Service {
-
-    func fetchTransactions(completion: @escaping ([TransactionListResponse]) -> Void) {
+    
+    
+    func conectMovimentacao(userId: Int, completion: @escaping ([TransactionListResponse]) -> Void ) {
         let endpoint = "https://desafio-it-server.herokuapp.com/lancamentos"
-       
+        
         AF.request(endpoint, method: .get).responseData { response in
             let decoder = JSONDecoder()
             let movimentacoes =  try! decoder.decode([TransactionListResponse].self, from: response.data!)
             completion(movimentacoes)
         }
+        
     }
     
-    func gettingData(completion: @escaping ([TransactionListResponse]) -> Void) {
+    
+    func fetchTransaction(completion: @escaping ([TransactionListResponse]) -> Void) {
         let url = URL(string: "https://desafio-it-server.herokuapp.com/lancamentos")!
         let session = URLSession.shared
         var request = URLRequest(url: url)
