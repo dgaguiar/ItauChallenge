@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		41507CAB997A34E6CE84D8E6 /* Pods_ItauChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C0ED0C875EE1492405D6C9 /* Pods_ItauChallenge.framework */; };
+		5713AE90244EB6A9005163D7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5713AE8F244EB6A8005163D7 /* TableViewCell.swift */; };
 		577BA005244E487C00CC02C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA004244E487C00CC02C7 /* AppDelegate.swift */; };
 		577BA007244E487C00CC02C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA006244E487C00CC02C7 /* SceneDelegate.swift */; };
 		577BA009244E487C00CC02C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA008244E487C00CC02C7 /* ViewController.swift */; };
@@ -18,13 +19,11 @@
 		577BA01D244E4A4700CC02C7 /* NetworknigConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA01C244E4A4700CC02C7 /* NetworknigConnection.swift */; };
 		577BA020244E4A7E00CC02C7 /* TransactionListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA01F244E4A7E00CC02C7 /* TransactionListResponse.swift */; };
 		577BA022244E4BA100CC02C7 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA021244E4BA100CC02C7 /* CategoryModel.swift */; };
-		577BA026244E5A6A00CC02C7 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA025244E5A6900CC02C7 /* View.swift */; };
-		577BA029244E6C6A00CC02C7 /* TableViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA027244E6C6900CC02C7 /* TableViewCellViewController.swift */; };
-		577BA02A244E6C6A00CC02C7 /* TableViewCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 577BA028244E6C6A00CC02C7 /* TableViewCellViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F4662EA9C37D1D94256DA47 /* Pods-ItauChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItauChallenge.release.xcconfig"; path = "Target Support Files/Pods-ItauChallenge/Pods-ItauChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		5713AE8F244EB6A8005163D7 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		577BA001244E487C00CC02C7 /* ItauChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItauChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		577BA004244E487C00CC02C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		577BA006244E487C00CC02C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,9 +36,6 @@
 		577BA01C244E4A4700CC02C7 /* NetworknigConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworknigConnection.swift; sourceTree = "<group>"; };
 		577BA01F244E4A7E00CC02C7 /* TransactionListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListResponse.swift; sourceTree = "<group>"; };
 		577BA021244E4BA100CC02C7 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
-		577BA025244E5A6900CC02C7 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		577BA027244E6C6900CC02C7 /* TableViewCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewController.swift; sourceTree = "<group>"; };
-		577BA028244E6C6A00CC02C7 /* TableViewCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellViewController.xib; sourceTree = "<group>"; };
 		F3C0ED0C875EE1492405D6C9 /* Pods_ItauChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ItauChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69AE0448BE78F917A6A87BE /* Pods-ItauChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItauChallenge.debug.xcconfig"; path = "Target Support Files/Pods-ItauChallenge/Pods-ItauChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,7 +82,6 @@
 				577BA012244E488100CC02C7 /* LaunchScreen.storyboard */,
 				577BA015244E488100CC02C7 /* Info.plist */,
 				577BA00D244E487C00CC02C7 /* ItauChallenge.xcdatamodeld */,
-				577BA02B244E6C7200CC02C7 /* TableViewCell */,
 			);
 			path = ItauChallenge;
 			sourceTree = "<group>";
@@ -112,8 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				577BA008244E487C00CC02C7 /* ViewController.swift */,
+				5713AE8F244EB6A8005163D7 /* TableViewCell.swift */,
 				577BA024244E56B000CC02C7 /* Storyboard */,
-				577BA025244E5A6900CC02C7 /* View.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -124,15 +119,6 @@
 				577BA00A244E487C00CC02C7 /* Main.storyboard */,
 			);
 			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		577BA02B244E6C7200CC02C7 /* TableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				577BA027244E6C6900CC02C7 /* TableViewCellViewController.swift */,
-				577BA028244E6C6A00CC02C7 /* TableViewCellViewController.xib */,
-			);
-			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		BD1DC2552F17F267C1F1AE32 /* Pods */ = {
@@ -214,7 +200,6 @@
 			files = (
 				577BA014244E488100CC02C7 /* LaunchScreen.storyboard in Resources */,
 				577BA011244E488100CC02C7 /* Assets.xcassets in Resources */,
-				577BA02A244E6C6A00CC02C7 /* TableViewCellViewController.xib in Resources */,
 				577BA00C244E487C00CC02C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,12 +253,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				577BA026244E5A6A00CC02C7 /* View.swift in Sources */,
 				577BA00F244E487C00CC02C7 /* ItauChallenge.xcdatamodeld in Sources */,
+				5713AE90244EB6A9005163D7 /* TableViewCell.swift in Sources */,
 				577BA009244E487C00CC02C7 /* ViewController.swift in Sources */,
 				577BA020244E4A7E00CC02C7 /* TransactionListResponse.swift in Sources */,
 				577BA005244E487C00CC02C7 /* AppDelegate.swift in Sources */,
-				577BA029244E6C6A00CC02C7 /* TableViewCellViewController.swift in Sources */,
 				577BA022244E4BA100CC02C7 /* CategoryModel.swift in Sources */,
 				577BA01D244E4A4700CC02C7 /* NetworknigConnection.swift in Sources */,
 				577BA007244E487C00CC02C7 /* SceneDelegate.swift in Sources */,
