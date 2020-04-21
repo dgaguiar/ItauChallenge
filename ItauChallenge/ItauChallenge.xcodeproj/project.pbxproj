@@ -13,6 +13,16 @@
 		574BCAC3244F2420009D57E7 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAC2244F2420009D57E7 /* Presenter.swift */; };
 		574BCAC5244F3DFA009D57E7 /* DetailTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAC4244F3DF9009D57E7 /* DetailTransactionViewController.swift */; };
 		574BCAC7244F4B9A009D57E7 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAC6244F4B9A009D57E7 /* TransactionViewModel.swift */; };
+		574BCACD244F6432009D57E7 /* MonthBalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCACC244F6432009D57E7 /* MonthBalanceViewController.swift */; };
+		574BCACF244F649F009D57E7 /* MonthBalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCACE244F649F009D57E7 /* MonthBalanceTableViewCell.swift */; };
+		574BCADC244F7DF4009D57E7 /* ItauChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCADB244F7DF4009D57E7 /* ItauChallengeUITests.swift */; };
+		574BCAE5244F7E12009D57E7 /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAE4244F7E12009D57E7 /* ViewControllerTest.swift */; };
+		574BCAE7244F7E68009D57E7 /* PresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAE6244F7E68009D57E7 /* PresenterTest.swift */; };
+		574BCAE9244F7E77009D57E7 /* InteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAE8244F7E76009D57E7 /* InteractorTest.swift */; };
+		574BCAEC244F7EAF009D57E7 /* ViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAEB244F7EAF009D57E7 /* ViewControllerMock.swift */; };
+		574BCAEE244F7ED9009D57E7 /* PresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAED244F7ED9009D57E7 /* PresenterMock.swift */; };
+		574BCAF0244F7EFF009D57E7 /* InteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAEF244F7EFF009D57E7 /* InteractorMock.swift */; };
+		574BCAF2244F806A009D57E7 /* ModelMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAF1244F806A009D57E7 /* ModelMocks.swift */; };
 		577BA005244E487C00CC02C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA004244E487C00CC02C7 /* AppDelegate.swift */; };
 		577BA007244E487C00CC02C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA006244E487C00CC02C7 /* SceneDelegate.swift */; };
 		577BA009244E487C00CC02C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA008244E487C00CC02C7 /* ViewController.swift */; };
@@ -25,6 +35,16 @@
 		577BA022244E4BA100CC02C7 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA021244E4BA100CC02C7 /* CategoryModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		574BCADE244F7DF4009D57E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 577B9FF9244E487C00CC02C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 577BA000244E487C00CC02C7;
+			remoteInfo = ItauChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0F4662EA9C37D1D94256DA47 /* Pods-ItauChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItauChallenge.release.xcconfig"; path = "Target Support Files/Pods-ItauChallenge/Pods-ItauChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		5713AE8F244EB6A8005163D7 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -32,6 +52,19 @@
 		574BCAC2244F2420009D57E7 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		574BCAC4244F3DF9009D57E7 /* DetailTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionViewController.swift; sourceTree = "<group>"; };
 		574BCAC6244F4B9A009D57E7 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		574BCACC244F6432009D57E7 /* MonthBalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthBalanceViewController.swift; sourceTree = "<group>"; };
+		574BCACE244F649F009D57E7 /* MonthBalanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthBalanceTableViewCell.swift; sourceTree = "<group>"; };
+		574BCAD1244F7C85009D57E7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		574BCAD9244F7DF4009D57E7 /* ItauChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItauChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		574BCADB244F7DF4009D57E7 /* ItauChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItauChallengeUITests.swift; sourceTree = "<group>"; };
+		574BCADD244F7DF4009D57E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		574BCAE4244F7E12009D57E7 /* ViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
+		574BCAE6244F7E68009D57E7 /* PresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterTest.swift; sourceTree = "<group>"; };
+		574BCAE8244F7E76009D57E7 /* InteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorTest.swift; sourceTree = "<group>"; };
+		574BCAEB244F7EAF009D57E7 /* ViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMock.swift; sourceTree = "<group>"; };
+		574BCAED244F7ED9009D57E7 /* PresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterMock.swift; sourceTree = "<group>"; };
+		574BCAEF244F7EFF009D57E7 /* InteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorMock.swift; sourceTree = "<group>"; };
+		574BCAF1244F806A009D57E7 /* ModelMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMocks.swift; sourceTree = "<group>"; };
 		577BA001244E487C00CC02C7 /* ItauChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItauChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		577BA004244E487C00CC02C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		577BA006244E487C00CC02C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +82,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		574BCAD6244F7DF4009D57E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		577B9FFE244E487C00CC02C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,10 +100,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		574BCACA244F5E58009D57E7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				574BCAC2244F2420009D57E7 /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		574BCACB244F5E69009D57E7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				574BCAC0244F23CB009D57E7 /* Interactor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		574BCAD0244F7BEB009D57E7 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		574BCADA244F7DF4009D57E7 /* ItauChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				574BCAE3244F7DFD009D57E7 /* Test */,
+				574BCADB244F7DF4009D57E7 /* ItauChallengeUITests.swift */,
+				574BCADD244F7DF4009D57E7 /* Info.plist */,
+			);
+			path = ItauChallengeUITests;
+			sourceTree = "<group>";
+		};
+		574BCAE3244F7DFD009D57E7 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				574BCAEA244F7E7D009D57E7 /* Mock */,
+				574BCAE4244F7E12009D57E7 /* ViewControllerTest.swift */,
+				574BCAE6244F7E68009D57E7 /* PresenterTest.swift */,
+				574BCAE8244F7E76009D57E7 /* InteractorTest.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		574BCAEA244F7E7D009D57E7 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				574BCAEB244F7EAF009D57E7 /* ViewControllerMock.swift */,
+				574BCAED244F7ED9009D57E7 /* PresenterMock.swift */,
+				574BCAEF244F7EFF009D57E7 /* InteractorMock.swift */,
+				574BCAF1244F806A009D57E7 /* ModelMocks.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		577B9FF8244E487C00CC02C7 = {
 			isa = PBXGroup;
 			children = (
 				577BA003244E487C00CC02C7 /* ItauChallenge */,
+				574BCADA244F7DF4009D57E7 /* ItauChallengeUITests */,
 				577BA002244E487C00CC02C7 /* Products */,
 				BD1DC2552F17F267C1F1AE32 /* Pods */,
 				F4717F2BF4E4286DA636E1C5 /* Frameworks */,
@@ -74,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				577BA001244E487C00CC02C7 /* ItauChallenge.app */,
+				574BCAD9244F7DF4009D57E7 /* ItauChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,13 +178,15 @@
 		577BA003244E487C00CC02C7 /* ItauChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				574BCAD0244F7BEB009D57E7 /* Tests */,
+				574BCACB244F5E69009D57E7 /* Interactor */,
+				574BCACA244F5E58009D57E7 /* Presenter */,
 				577BA023244E56A200CC02C7 /* View */,
 				577BA01E244E4A5600CC02C7 /* Model */,
 				577BA01B244E49D900CC02C7 /* Networking */,
 				577BA004244E487C00CC02C7 /* AppDelegate.swift */,
 				577BA006244E487C00CC02C7 /* SceneDelegate.swift */,
 				577BA010244E488100CC02C7 /* Assets.xcassets */,
-				577BA012244E488100CC02C7 /* LaunchScreen.storyboard */,
 				577BA015244E488100CC02C7 /* Info.plist */,
 				577BA00D244E487C00CC02C7 /* ItauChallenge.xcdatamodeld */,
 			);
@@ -116,11 +215,11 @@
 			isa = PBXGroup;
 			children = (
 				577BA008244E487C00CC02C7 /* ViewController.swift */,
+				574BCAC4244F3DF9009D57E7 /* DetailTransactionViewController.swift */,
+				574BCACC244F6432009D57E7 /* MonthBalanceViewController.swift */,
 				5713AE8F244EB6A8005163D7 /* TableViewCell.swift */,
 				577BA024244E56B000CC02C7 /* Storyboard */,
-				574BCAC0244F23CB009D57E7 /* Interactor.swift */,
-				574BCAC2244F2420009D57E7 /* Presenter.swift */,
-				574BCAC4244F3DF9009D57E7 /* DetailTransactionViewController.swift */,
+				574BCACE244F649F009D57E7 /* MonthBalanceTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -129,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				577BA00A244E487C00CC02C7 /* Main.storyboard */,
+				577BA012244E488100CC02C7 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -145,6 +245,7 @@
 		F4717F2BF4E4286DA636E1C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				574BCAD1244F7C85009D57E7 /* XCTest.framework */,
 				F3C0ED0C875EE1492405D6C9 /* Pods_ItauChallenge.framework */,
 			);
 			name = Frameworks;
@@ -153,6 +254,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		574BCAD8244F7DF4009D57E7 /* ItauChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 574BCAE0244F7DF4009D57E7 /* Build configuration list for PBXNativeTarget "ItauChallengeUITests" */;
+			buildPhases = (
+				574BCAD5244F7DF4009D57E7 /* Sources */,
+				574BCAD6244F7DF4009D57E7 /* Frameworks */,
+				574BCAD7244F7DF4009D57E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				574BCADF244F7DF4009D57E7 /* PBXTargetDependency */,
+			);
+			name = ItauChallengeUITests;
+			productName = ItauChallengeUITests;
+			productReference = 574BCAD9244F7DF4009D57E7 /* ItauChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		577BA000244E487C00CC02C7 /* ItauChallenge */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 577BA018244E488100CC02C7 /* Build configuration list for PBXNativeTarget "ItauChallenge" */;
@@ -182,6 +301,10 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = daianne.gomes.aguiar;
 				TargetAttributes = {
+					574BCAD8244F7DF4009D57E7 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 577BA000244E487C00CC02C7;
+					};
 					577BA000244E487C00CC02C7 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -201,11 +324,19 @@
 			projectRoot = "";
 			targets = (
 				577BA000244E487C00CC02C7 /* ItauChallenge */,
+				574BCAD8244F7DF4009D57E7 /* ItauChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		574BCAD7244F7DF4009D57E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		577B9FFF244E487C00CC02C7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,10 +392,27 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		574BCAD5244F7DF4009D57E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574BCAE5244F7E12009D57E7 /* ViewControllerTest.swift in Sources */,
+				574BCAF2244F806A009D57E7 /* ModelMocks.swift in Sources */,
+				574BCAF0244F7EFF009D57E7 /* InteractorMock.swift in Sources */,
+				574BCADC244F7DF4009D57E7 /* ItauChallengeUITests.swift in Sources */,
+				574BCAEE244F7ED9009D57E7 /* PresenterMock.swift in Sources */,
+				574BCAE9244F7E77009D57E7 /* InteractorTest.swift in Sources */,
+				574BCAEC244F7EAF009D57E7 /* ViewControllerMock.swift in Sources */,
+				574BCAE7244F7E68009D57E7 /* PresenterTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		577B9FFD244E487C00CC02C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				574BCACD244F6432009D57E7 /* MonthBalanceViewController.swift in Sources */,
+				574BCACF244F649F009D57E7 /* MonthBalanceTableViewCell.swift in Sources */,
 				577BA00F244E487C00CC02C7 /* ItauChallenge.xcdatamodeld in Sources */,
 				5713AE90244EB6A9005163D7 /* TableViewCell.swift in Sources */,
 				577BA009244E487C00CC02C7 /* ViewController.swift in Sources */,
@@ -281,6 +429,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		574BCADF244F7DF4009D57E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 577BA000244E487C00CC02C7 /* ItauChallenge */;
+			targetProxy = 574BCADE244F7DF4009D57E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		577BA00A244E487C00CC02C7 /* Main.storyboard */ = {
@@ -302,6 +458,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		574BCAE1244F7DF4009D57E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 326DM67Y55;
+				INFOPLIST_FILE = ItauChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = accenture.com.ciclodevida.ItauChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ItauChallenge;
+			};
+			name = Debug;
+		};
+		574BCAE2244F7DF4009D57E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 326DM67Y55;
+				INFOPLIST_FILE = ItauChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = accenture.com.ciclodevida.ItauChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ItauChallenge;
+			};
+			name = Release;
+		};
 		577BA016244E488100CC02C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -457,6 +651,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		574BCAE0244F7DF4009D57E7 /* Build configuration list for PBXNativeTarget "ItauChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				574BCAE1244F7DF4009D57E7 /* Debug */,
+				574BCAE2244F7DF4009D57E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		577B9FFC244E487C00CC02C7 /* Build configuration list for PBXProject "ItauChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

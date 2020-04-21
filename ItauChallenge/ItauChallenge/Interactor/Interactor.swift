@@ -9,7 +9,7 @@
 import Foundation
 protocol InteractorProtocol: class {
     func fetchTransactions()
-     func fetchlancamentos(model: [TransactionListResponse])
+    func goToMonthBalance()
 }
 
 class Interactor: InteractorProtocol {
@@ -23,15 +23,18 @@ class Interactor: InteractorProtocol {
     }
     
     func fetchTransactions() {
-        respository.connectTransaction(completion:  ({ Movimentacao in
+        respository.fetchTransaction(completion:  ({ Movimentacao in
             self.fetchlancamentos(model: Movimentacao)
         }))
-        print("<<<<<< VEIO PRA INTERACTOR >>>>")
     }
     
-    func fetchlancamentos(model: [TransactionListResponse]) {
+    private func fetchlancamentos(model: [TransactionListResponse]) {
         respository.connectCategory(completion:  ({ Category  in
             self.presenter?.presentViewModel(model: model, categories: Category)
         }))
+    }
+    
+    func goToMonthBalance() {
+        presenter?.presentBalanceMonth()
     }
 }

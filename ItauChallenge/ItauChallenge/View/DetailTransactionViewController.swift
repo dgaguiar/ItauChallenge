@@ -15,7 +15,7 @@ class DetailTransactionViewController: UIViewController {
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
     
-    var model: TransactionViewModel?
+    var model: TransactionViewModel.Items?
     
     override func viewDidLoad() {
         super.viewDidLoad()

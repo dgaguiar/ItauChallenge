@@ -15,7 +15,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var categoryIcon: UIImageView!
     @IBOutlet weak var monthLabel: UILabel!
     
-    func setupCell(viewModel: TransactionViewModel) {
+    func setupCell(viewModel: TransactionViewModel.Items) {
         configValue(value: viewModel.value)
         configOrigin(origin: viewModel.origin)
         configIcon(category: viewModel.category)

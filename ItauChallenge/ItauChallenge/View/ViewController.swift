@@ -9,8 +9,8 @@
 import UIKit
 
 protocol ViewControllerProtocol: class {
-    
     func displayOrderByMonth(viewModel: [TransactionViewModel])
+    func displayBalanceMonth(monthModel: Balance) 
 }
 
 class ViewController: UIViewController, ViewControllerProtocol {
@@ -49,6 +49,9 @@ class ViewController: UIViewController, ViewControllerProtocol {
         setupTableView()
     }
     
+    @IBAction func showMonthBalance(_ sender: UIButton) {
+        interactor?.goToMonthBalance()
+    }
     
     func setupHeader() {
         titleLabel.text = "my balance"
@@ -66,7 +69,16 @@ class ViewController: UIViewController, ViewControllerProtocol {
         print(viewModel)
     }
     
-    func goToDetail(detailModel: TransactionViewModel) {
+    func displayBalanceMonth(monthModel: Balance) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let controller = storyboard.instantiateViewController(withIdentifier: "MonthBalanceViewController") as? MonthBalanceViewController {
+            controller.model = [monthModel]
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+    
+    func goToDetail(detailModel: TransactionViewModel.Items) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "DetailTransactionViewController") as? DetailTransactionViewController {
             controller.model = detailModel
@@ -77,6 +89,7 @@ class ViewController: UIViewController, ViewControllerProtocol {
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return model.count
     }
@@ -84,14 +97,17 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell  = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         
-        let itens = model[indexPath.row]
+        let itens = model[indexPath.section].transactionItems[indexPath.row]
         cell.setupCell(viewModel: itens)
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        goToDetail(detailModel: model[indexPath.row])
+        goToDetail(detailModel: model[indexPath.section].transactionItems[indexPath.row])
     }
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 20 
+    }
 }
