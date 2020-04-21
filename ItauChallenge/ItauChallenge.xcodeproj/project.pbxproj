@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41507CAB997A34E6CE84D8E6 /* Pods_ItauChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C0ED0C875EE1492405D6C9 /* Pods_ItauChallenge.framework */; };
+		577BA005244E487C00CC02C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA004244E487C00CC02C7 /* AppDelegate.swift */; };
+		577BA007244E487C00CC02C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA006244E487C00CC02C7 /* SceneDelegate.swift */; };
+		577BA009244E487C00CC02C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA008244E487C00CC02C7 /* ViewController.swift */; };
+		577BA00C244E487C00CC02C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577BA00A244E487C00CC02C7 /* Main.storyboard */; };
+		577BA00F244E487C00CC02C7 /* ItauChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 577BA00D244E487C00CC02C7 /* ItauChallenge.xcdatamodeld */; };
+		577BA011244E488100CC02C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 577BA010244E488100CC02C7 /* Assets.xcassets */; };
+		577BA014244E488100CC02C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577BA012244E488100CC02C7 /* LaunchScreen.storyboard */; };
+		577BA01D244E4A4700CC02C7 /* NetworknigConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA01C244E4A4700CC02C7 /* NetworknigConnection.swift */; };
+		577BA020244E4A7E00CC02C7 /* TransactionListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA01F244E4A7E00CC02C7 /* TransactionListResponse.swift */; };
+		577BA022244E4BA100CC02C7 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA021244E4BA100CC02C7 /* CategoryModel.swift */; };
+		577BA026244E5A6A00CC02C7 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA025244E5A6900CC02C7 /* View.swift */; };
+		577BA029244E6C6A00CC02C7 /* TableViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA027244E6C6900CC02C7 /* TableViewCellViewController.swift */; };
+		577BA02A244E6C6A00CC02C7 /* TableViewCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 577BA028244E6C6A00CC02C7 /* TableViewCellViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F4662EA9C37D1D94256DA47 /* Pods-ItauChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItauChallenge.release.xcconfig"; path = "Target Support Files/Pods-ItauChallenge/Pods-ItauChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		577BA001244E487C00CC02C7 /* ItauChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItauChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		577BA004244E487C00CC02C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		577BA006244E487C00CC02C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		577BA008244E487C00CC02C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		577BA00B244E487C00CC02C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		577BA00E244E487C00CC02C7 /* ItauChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ItauChallenge.xcdatamodel; sourceTree = "<group>"; };
+		577BA010244E488100CC02C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		577BA013244E488100CC02C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		577BA015244E488100CC02C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		577BA01C244E4A4700CC02C7 /* NetworknigConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworknigConnection.swift; sourceTree = "<group>"; };
+		577BA01F244E4A7E00CC02C7 /* TransactionListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListResponse.swift; sourceTree = "<group>"; };
+		577BA021244E4BA100CC02C7 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		577BA025244E5A6900CC02C7 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		577BA027244E6C6900CC02C7 /* TableViewCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewController.swift; sourceTree = "<group>"; };
+		577BA028244E6C6A00CC02C7 /* TableViewCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellViewController.xib; sourceTree = "<group>"; };
+		F3C0ED0C875EE1492405D6C9 /* Pods_ItauChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ItauChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F69AE0448BE78F917A6A87BE /* Pods-ItauChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItauChallenge.debug.xcconfig"; path = "Target Support Files/Pods-ItauChallenge/Pods-ItauChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		577B9FFE244E487C00CC02C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41507CAB997A34E6CE84D8E6 /* Pods_ItauChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		577B9FF8244E487C00CC02C7 = {
+			isa = PBXGroup;
+			children = (
+				577BA003244E487C00CC02C7 /* ItauChallenge */,
+				577BA002244E487C00CC02C7 /* Products */,
+				BD1DC2552F17F267C1F1AE32 /* Pods */,
+				F4717F2BF4E4286DA636E1C5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		577BA002244E487C00CC02C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				577BA001244E487C00CC02C7 /* ItauChallenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		577BA003244E487C00CC02C7 /* ItauChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				577BA023244E56A200CC02C7 /* View */,
+				577BA01E244E4A5600CC02C7 /* Model */,
+				577BA01B244E49D900CC02C7 /* Networking */,
+				577BA004244E487C00CC02C7 /* AppDelegate.swift */,
+				577BA006244E487C00CC02C7 /* SceneDelegate.swift */,
+				577BA010244E488100CC02C7 /* Assets.xcassets */,
+				577BA012244E488100CC02C7 /* LaunchScreen.storyboard */,
+				577BA015244E488100CC02C7 /* Info.plist */,
+				577BA00D244E487C00CC02C7 /* ItauChallenge.xcdatamodeld */,
+				577BA02B244E6C7200CC02C7 /* TableViewCell */,
+			);
+			path = ItauChallenge;
+			sourceTree = "<group>";
+		};
+		577BA01B244E49D900CC02C7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				577BA01C244E4A4700CC02C7 /* NetworknigConnection.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		577BA01E244E4A5600CC02C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				577BA01F244E4A7E00CC02C7 /* TransactionListResponse.swift */,
+				577BA021244E4BA100CC02C7 /* CategoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		577BA023244E56A200CC02C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				577BA008244E487C00CC02C7 /* ViewController.swift */,
+				577BA024244E56B000CC02C7 /* Storyboard */,
+				577BA025244E5A6900CC02C7 /* View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		577BA024244E56B000CC02C7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				577BA00A244E487C00CC02C7 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		577BA02B244E6C7200CC02C7 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				577BA027244E6C6900CC02C7 /* TableViewCellViewController.swift */,
+				577BA028244E6C6A00CC02C7 /* TableViewCellViewController.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		BD1DC2552F17F267C1F1AE32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F69AE0448BE78F917A6A87BE /* Pods-ItauChallenge.debug.xcconfig */,
+				0F4662EA9C37D1D94256DA47 /* Pods-ItauChallenge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4717F2BF4E4286DA636E1C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3C0ED0C875EE1492405D6C9 /* Pods_ItauChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		577BA000244E487C00CC02C7 /* ItauChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 577BA018244E488100CC02C7 /* Build configuration list for PBXNativeTarget "ItauChallenge" */;
+			buildPhases = (
+				5651674064DA8CF006072B3D /* [CP] Check Pods Manifest.lock */,
+				577B9FFD244E487C00CC02C7 /* Sources */,
+				577B9FFE244E487C00CC02C7 /* Frameworks */,
+				577B9FFF244E487C00CC02C7 /* Resources */,
+				72E7EE4F05487BB1A3A42B71 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ItauChallenge;
+			productName = ItauChallenge;
+			productReference = 577BA001244E487C00CC02C7 /* ItauChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		577B9FF9244E487C00CC02C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = daianne.gomes.aguiar;
+				TargetAttributes = {
+					577BA000244E487C00CC02C7 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 577B9FFC244E487C00CC02C7 /* Build configuration list for PBXProject "ItauChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 577B9FF8244E487C00CC02C7;
+			productRefGroup = 577BA002244E487C00CC02C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				577BA000244E487C00CC02C7 /* ItauChallenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		577B9FFF244E487C00CC02C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577BA014244E488100CC02C7 /* LaunchScreen.storyboard in Resources */,
+				577BA011244E488100CC02C7 /* Assets.xcassets in Resources */,
+				577BA02A244E6C6A00CC02C7 /* TableViewCellViewController.xib in Resources */,
+				577BA00C244E487C00CC02C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5651674064DA8CF006072B3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ItauChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72E7EE4F05487BB1A3A42B71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ItauChallenge/Pods-ItauChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ItauChallenge/Pods-ItauChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ItauChallenge/Pods-ItauChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		577B9FFD244E487C00CC02C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577BA026244E5A6A00CC02C7 /* View.swift in Sources */,
+				577BA00F244E487C00CC02C7 /* ItauChallenge.xcdatamodeld in Sources */,
+				577BA009244E487C00CC02C7 /* ViewController.swift in Sources */,
+				577BA020244E4A7E00CC02C7 /* TransactionListResponse.swift in Sources */,
+				577BA005244E487C00CC02C7 /* AppDelegate.swift in Sources */,
+				577BA029244E6C6A00CC02C7 /* TableViewCellViewController.swift in Sources */,
+				577BA022244E4BA100CC02C7 /* CategoryModel.swift in Sources */,
+				577BA01D244E4A4700CC02C7 /* NetworknigConnection.swift in Sources */,
+				577BA007244E487C00CC02C7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		577BA00A244E487C00CC02C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				577BA00B244E487C00CC02C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		577BA012244E488100CC02C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				577BA013244E488100CC02C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		577BA016244E488100CC02C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		577BA017244E488100CC02C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		577BA019244E488100CC02C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F69AE0448BE78F917A6A87BE /* Pods-ItauChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 326DM67Y55;
+				INFOPLIST_FILE = ItauChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = accenture.com.ciclodevida.ItauChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		577BA01A244E488100CC02C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F4662EA9C37D1D94256DA47 /* Pods-ItauChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 326DM67Y55;
+				INFOPLIST_FILE = ItauChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = accenture.com.ciclodevida.ItauChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		577B9FFC244E487C00CC02C7 /* Build configuration list for PBXProject "ItauChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				577BA016244E488100CC02C7 /* Debug */,
+				577BA017244E488100CC02C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		577BA018244E488100CC02C7 /* Build configuration list for PBXNativeTarget "ItauChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				577BA019244E488100CC02C7 /* Debug */,
+				577BA01A244E488100CC02C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		577BA00D244E487C00CC02C7 /* ItauChallenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				577BA00E244E487C00CC02C7 /* ItauChallenge.xcdatamodel */,
+			);
+			currentVersion = 577BA00E244E487C00CC02C7 /* ItauChallenge.xcdatamodel */;
+			path = ItauChallenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 577B9FF9244E487C00CC02C7 /* Project object */;
+}
