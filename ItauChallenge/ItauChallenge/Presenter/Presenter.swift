@@ -49,12 +49,11 @@ class Presenter: PresenterProtocol {
                 let category = configCategory(category: items.category, categoryModel: categories)
                 let month = configMonth(month: items.month)
                 
-                transactionItem = [TransactionViewModel.Items(month: month, id: id, value: value, origin: origin, category: category)]
-                
-//                viewModel.append(transactionItem)
+                transactionItem.append(TransactionViewModel.Items(month: month, id: id, value: value, origin: origin, category: category))
+            
             }
             let monthName = configMonth(month: transaction.monthName)
-            viewModel = [TransactionViewModel(monthName: monthName, transactionItems: transactionItem)]
+            viewModel.append(TransactionViewModel(monthName: monthName, transactionItems: transactionItem))
         }
         
         view?.displayOrderByMonth(viewModel: viewModel)

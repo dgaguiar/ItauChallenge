@@ -23,7 +23,7 @@ class Interactor: InteractorProtocol {
     }
     
     func fetchTransactions() {
-        respository.fetchTransaction(completion:  ({ Movimentacao in
+        respository.connectTransaction(completion:  ({ Movimentacao in
             self.fetchlancamentos(model: Movimentacao)
         }))
     }
