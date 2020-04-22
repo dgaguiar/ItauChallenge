@@ -11,6 +11,8 @@ import Foundation
 protocol InteractorProtocol: class {
     func fetchTransactions()
     func goToMonthBalance()
+    func reloadAllMonth()
+    func getMonthTofilter(month: String)
 }
 
 class Interactor: InteractorProtocol {
@@ -32,6 +34,14 @@ class Interactor: InteractorProtocol {
         respository.connectCategory(completion:  ({ Category  in
             self.presenter?.presentViewModel(model: model, categories: Category)
         }))
+    }
+    
+    func reloadAllMonth() {
+        presenter?.presentReloadAllMonth()
+    }
+    
+    func getMonthTofilter(month: String) {
+        presenter?.presentFilterByMonth(month: month)
     }
     
     func goToMonthBalance() {

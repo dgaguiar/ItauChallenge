@@ -10,7 +10,9 @@ import UIKit
 
 protocol ViewControllerProtocol: class {
     func displayOrderByMonth(viewModel: [TransactionViewModel])
-    func displayBalanceMonth(monthModel: [TransactionViewModel]) 
+    func displayBalanceMonth(monthModel: [TransactionViewModel])
+    func displayFilterByMonth(monthModel: [TransactionViewModel])
+    func displayNotTransactionsAlert(title: String, message: String, buttonText: String)
 }
 
 class ViewController: UIViewController, ViewControllerProtocol {
@@ -18,6 +20,7 @@ class ViewController: UIViewController, ViewControllerProtocol {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var balanceLabel: UILabel!
+    @IBOutlet weak var filterView: UIView!
     
     var interactor: InteractorProtocol?
     var model: [TransactionViewModel] = []
@@ -50,9 +53,34 @@ class ViewController: UIViewController, ViewControllerProtocol {
         setupTableView()
     }
     
+    @IBAction func reloadAllTableView(_ sender: UIButton) {
+        interactor?.reloadAllMonth()
+    }
+    
+    
     @IBAction func showMonthBalance(_ sender: UIButton) {
         interactor?.goToMonthBalance()
     }
+    
+    @IBAction func showFilter(_ sender: UIButton) {
+        var rotate: CGFloat = 0.0
+        if filterView.isHidden {
+            filterView.isHidden = false
+            rotate = CGFloat.pi - 0.01
+        } else {
+            filterView.isHidden  = true
+            rotate = 0.01
+        }
+        UIView.animate(withDuration: 0.3, animations: {
+            sender.transform = CGAffineTransform(rotationAngle: rotate)
+        })
+    }
+    
+    @IBAction func filterByMonth(_ sender: UIButton) {
+        let label = sender.restorationIdentifier
+        interactor?.getMonthTofilter(month: label ?? "erro")
+    }
+    
     
     func setupHeader() {
         titleLabel.text = "my balance"
@@ -76,6 +104,17 @@ class ViewController: UIViewController, ViewControllerProtocol {
             controller.model = monthModel
             self.navigationController?.pushViewController(controller, animated: true)
         }
+    }
+    
+    func displayFilterByMonth(monthModel: [TransactionViewModel]) {
+        self.model = monthModel
+        tableView.reloadData()
+    }
+    
+    func displayNotTransactionsAlert(title: String, message: String, buttonText: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: buttonText, style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     func goToDetail(detailModel: TransactionViewModel.Items) {

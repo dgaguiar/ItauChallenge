@@ -41,5 +41,24 @@ class PresenterTest: XCTestCase {
         XCTAssertTrue(spy.displayOrderByMonthCalled)
     }
     
-
+    func testPresentFilterByMonth() {
+        let month = "Janeiro"
+        sut.presentFilterByMonth(month: month)
+        
+        XCTAssertFalse(spy.displayFilterByMonthCalled)
+    }
+    
+    func testPresentFilterByMonthEmpty() {
+        let month = "Mes"
+        sut.presentFilterByMonth(month: month)
+        
+        XCTAssertFalse(spy.displayNotTransactionsAlertCalled)
+    }
+    
+    func testPresentReloadAllMonth() {
+        sut.presentReloadAllMonth()
+        
+        XCTAssertTrue(spy.displayOrderByMonthCalled)
+    }
+    
 }

@@ -10,9 +10,11 @@ import Foundation
 @testable import ItauChallenge
 
 class InteractorMock: InteractorProtocol {
-    
+
     var fetchTransactionsCalled = false
     var goToMonthBalanceCalled = false
+    var reloadAllMonthCalled = false
+    var getMonthTofilterCalled = false
     
     func fetchTransactions() {
         fetchTransactionsCalled = true
@@ -20,6 +22,14 @@ class InteractorMock: InteractorProtocol {
     
     func goToMonthBalance() {
         goToMonthBalanceCalled = true
+    }
+    
+    func reloadAllMonth() {
+        reloadAllMonthCalled = true
+    }
+    
+    func getMonthTofilter(month: String) {
+        getMonthTofilterCalled = true
     }
     
 }

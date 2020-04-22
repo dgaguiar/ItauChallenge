@@ -29,6 +29,7 @@ class InteractorTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         sut = nil
         spy = nil
+        repositoryMock = nil
     }
 
     
@@ -44,4 +45,17 @@ class InteractorTest: XCTestCase {
         XCTAssertTrue(spy.presentBalanceMonthCalled)
     }
     
+    func testReloadAllMonth() {
+        sut.reloadAllMonth()
+        
+        XCTAssertTrue(spy.presentReloadAllMonthCalled)
+    }
+    
+    func testGetMonthTofilter() {
+        let month = "Mês"
+        sut.getMonthTofilter(month: month)
+        
+        XCTAssertTrue(spy.presentFilterByMonthCalled)
+    }
+      
 }
