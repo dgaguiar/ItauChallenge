@@ -67,7 +67,6 @@ class ViewController: UIViewController, ViewControllerProtocol {
     func displayOrderByMonth(viewModel: [TransactionViewModel]) {
         self.model = viewModel
         tableView.reloadData()
-        print(viewModel)
     }
     
     func displayBalanceMonth(monthModel: [TransactionViewModel]) {

@@ -30,10 +30,11 @@ class MonthBalanceViewController: UIViewController {
     }
     
     private func resizeTableViewIfNeeded() {
-           if tableViewHeight.constant != tableView.contentSize.height {
-               tableViewHeight.constant = tableView.contentSize.height
-           }
-       }
+        if tableViewHeight.constant != tableView.contentSize.height {
+            tableViewHeight.constant = tableView.contentSize.height
+        }
+    }
+    
     @IBAction func backButton(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }

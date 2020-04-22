@@ -17,7 +17,6 @@ class Interactor: InteractorProtocol {
     
     var presenter: PresenterProtocol?
     var respository: Service = ConnectionAPI()
-    var model: [TransactionListResponse] = []
     
     init(presenter: PresenterProtocol) {
         self.presenter = presenter
