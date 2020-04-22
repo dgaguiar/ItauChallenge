@@ -34,7 +34,9 @@ class MonthBalanceViewControllerTest: XCTestCase {
     
     func testViewDidLoad() {
         let tableView = UITableView()
+        let constraint = NSLayoutConstraint()
         sut.tableView = tableView
+        sut.tableViewHeight = constraint
         sut.viewDidLoad()
         
         XCTAssertNotNil(sut.model)
