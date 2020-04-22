@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		41507CAB997A34E6CE84D8E6 /* Pods_ItauChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C0ED0C875EE1492405D6C9 /* Pods_ItauChallenge.framework */; };
 		5713AE90244EB6A9005163D7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5713AE8F244EB6A8005163D7 /* TableViewCell.swift */; };
+		5740A37E244FDBAE000DE932 /* ItauChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5740A37D244FDBAE000DE932 /* ItauChallengeTests.swift */; };
+		5740A385244FDBFB000DE932 /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAE4244F7E12009D57E7 /* ViewControllerTest.swift */; };
+		5740A386244FDBFE000DE932 /* PresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAE6244F7E68009D57E7 /* PresenterTest.swift */; };
+		5740A387244FDC02000DE932 /* InteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAE8244F7E76009D57E7 /* InteractorTest.swift */; };
+		5740A388244FDC06000DE932 /* ViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAEB244F7EAF009D57E7 /* ViewControllerMock.swift */; };
+		5740A389244FDC09000DE932 /* PresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAED244F7ED9009D57E7 /* PresenterMock.swift */; };
+		5740A38A244FDC0C000DE932 /* InteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAEF244F7EFF009D57E7 /* InteractorMock.swift */; };
+		5740A38B244FDC0F000DE932 /* ModelMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAF1244F806A009D57E7 /* ModelMocks.swift */; };
+		5740A390244FE197000DE932 /*  MonthBalanceViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5740A38F244FE197000DE932 /*  MonthBalanceViewControllerTest.swift */; };
+		5740A392244FE582000DE932 /* MonthBalanceTableViewCellTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5740A391244FE582000DE932 /* MonthBalanceTableViewCellTest.swift */; };
+		5740A394244FE779000DE932 /* DetailTransactionViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5740A393244FE778000DE932 /* DetailTransactionViewControllerTest.swift */; };
 		574BCAC1244F23CB009D57E7 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAC0244F23CB009D57E7 /* Interactor.swift */; };
 		574BCAC3244F2420009D57E7 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAC2244F2420009D57E7 /* Presenter.swift */; };
 		574BCAC5244F3DFA009D57E7 /* DetailTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAC4244F3DF9009D57E7 /* DetailTransactionViewController.swift */; };
@@ -16,13 +27,6 @@
 		574BCACD244F6432009D57E7 /* MonthBalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCACC244F6432009D57E7 /* MonthBalanceViewController.swift */; };
 		574BCACF244F649F009D57E7 /* MonthBalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCACE244F649F009D57E7 /* MonthBalanceTableViewCell.swift */; };
 		574BCADC244F7DF4009D57E7 /* ItauChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCADB244F7DF4009D57E7 /* ItauChallengeUITests.swift */; };
-		574BCAE5244F7E12009D57E7 /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAE4244F7E12009D57E7 /* ViewControllerTest.swift */; };
-		574BCAE7244F7E68009D57E7 /* PresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAE6244F7E68009D57E7 /* PresenterTest.swift */; };
-		574BCAE9244F7E77009D57E7 /* InteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAE8244F7E76009D57E7 /* InteractorTest.swift */; };
-		574BCAEC244F7EAF009D57E7 /* ViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAEB244F7EAF009D57E7 /* ViewControllerMock.swift */; };
-		574BCAEE244F7ED9009D57E7 /* PresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAED244F7ED9009D57E7 /* PresenterMock.swift */; };
-		574BCAF0244F7EFF009D57E7 /* InteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAEF244F7EFF009D57E7 /* InteractorMock.swift */; };
-		574BCAF2244F806A009D57E7 /* ModelMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BCAF1244F806A009D57E7 /* ModelMocks.swift */; };
 		577BA005244E487C00CC02C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA004244E487C00CC02C7 /* AppDelegate.swift */; };
 		577BA007244E487C00CC02C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA006244E487C00CC02C7 /* SceneDelegate.swift */; };
 		577BA009244E487C00CC02C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BA008244E487C00CC02C7 /* ViewController.swift */; };
@@ -36,6 +40,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5740A380244FDBAE000DE932 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 577B9FF9244E487C00CC02C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 577BA000244E487C00CC02C7;
+			remoteInfo = ItauChallenge;
+		};
 		574BCADE244F7DF4009D57E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 577B9FF9244E487C00CC02C7 /* Project object */;
@@ -48,6 +59,12 @@
 /* Begin PBXFileReference section */
 		0F4662EA9C37D1D94256DA47 /* Pods-ItauChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItauChallenge.release.xcconfig"; path = "Target Support Files/Pods-ItauChallenge/Pods-ItauChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		5713AE8F244EB6A8005163D7 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		5740A37B244FDBAE000DE932 /* ItauChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItauChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5740A37D244FDBAE000DE932 /* ItauChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItauChallengeTests.swift; sourceTree = "<group>"; };
+		5740A37F244FDBAE000DE932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5740A38F244FE197000DE932 /*  MonthBalanceViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " MonthBalanceViewControllerTest.swift"; sourceTree = "<group>"; };
+		5740A391244FE582000DE932 /* MonthBalanceTableViewCellTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthBalanceTableViewCellTest.swift; sourceTree = "<group>"; };
+		5740A393244FE778000DE932 /* DetailTransactionViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionViewControllerTest.swift; sourceTree = "<group>"; };
 		574BCAC0244F23CB009D57E7 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		574BCAC2244F2420009D57E7 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		574BCAC4244F3DF9009D57E7 /* DetailTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +99,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5740A378244FDBAE000DE932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		574BCAD6244F7DF4009D57E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -100,6 +124,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5740A37C244FDBAE000DE932 /* ItauChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				574BCAE3244F7DFD009D57E7 /* Test */,
+				5740A37D244FDBAE000DE932 /* ItauChallengeTests.swift */,
+				5740A37F244FDBAE000DE932 /* Info.plist */,
+			);
+			path = ItauChallengeTests;
+			sourceTree = "<group>";
+		};
+		5740A38C244FDCDE000DE932 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				574BCAE4244F7E12009D57E7 /* ViewControllerTest.swift */,
+				574BCAE6244F7E68009D57E7 /* PresenterTest.swift */,
+				574BCAE8244F7E76009D57E7 /* InteractorTest.swift */,
+				574BCAEA244F7E7D009D57E7 /* Mock */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5740A38D244FE048000DE932 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				5740A393244FE778000DE932 /* DetailTransactionViewControllerTest.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		5740A38E244FE05A000DE932 /* BalanceMonth */ = {
+			isa = PBXGroup;
+			children = (
+				5740A38F244FE197000DE932 /*  MonthBalanceViewControllerTest.swift */,
+				5740A391244FE582000DE932 /* MonthBalanceTableViewCellTest.swift */,
+			);
+			path = BalanceMonth;
+			sourceTree = "<group>";
+		};
 		574BCACA244F5E58009D57E7 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,7 +188,6 @@
 		574BCADA244F7DF4009D57E7 /* ItauChallengeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				574BCAE3244F7DFD009D57E7 /* Test */,
 				574BCADB244F7DF4009D57E7 /* ItauChallengeUITests.swift */,
 				574BCADD244F7DF4009D57E7 /* Info.plist */,
 			);
@@ -136,10 +197,9 @@
 		574BCAE3244F7DFD009D57E7 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				574BCAEA244F7E7D009D57E7 /* Mock */,
-				574BCAE4244F7E12009D57E7 /* ViewControllerTest.swift */,
-				574BCAE6244F7E68009D57E7 /* PresenterTest.swift */,
-				574BCAE8244F7E76009D57E7 /* InteractorTest.swift */,
+				5740A38E244FE05A000DE932 /* BalanceMonth */,
+				5740A38D244FE048000DE932 /* Detail */,
+				5740A38C244FDCDE000DE932 /* Main */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -155,11 +215,38 @@
 			path = Mock;
 			sourceTree = "<group>";
 		};
+		574BCAF8244FCB20009D57E7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				577BA008244E487C00CC02C7 /* ViewController.swift */,
+				5713AE8F244EB6A8005163D7 /* TableViewCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		574BCAF9244FCB2D009D57E7 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				574BCAC4244F3DF9009D57E7 /* DetailTransactionViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		574BCAFA244FCB3B009D57E7 /* BalanceMonth */ = {
+			isa = PBXGroup;
+			children = (
+				574BCACC244F6432009D57E7 /* MonthBalanceViewController.swift */,
+				574BCACE244F649F009D57E7 /* MonthBalanceTableViewCell.swift */,
+			);
+			path = BalanceMonth;
+			sourceTree = "<group>";
+		};
 		577B9FF8244E487C00CC02C7 = {
 			isa = PBXGroup;
 			children = (
 				577BA003244E487C00CC02C7 /* ItauChallenge */,
 				574BCADA244F7DF4009D57E7 /* ItauChallengeUITests */,
+				5740A37C244FDBAE000DE932 /* ItauChallengeTests */,
 				577BA002244E487C00CC02C7 /* Products */,
 				BD1DC2552F17F267C1F1AE32 /* Pods */,
 				F4717F2BF4E4286DA636E1C5 /* Frameworks */,
@@ -171,6 +258,7 @@
 			children = (
 				577BA001244E487C00CC02C7 /* ItauChallenge.app */,
 				574BCAD9244F7DF4009D57E7 /* ItauChallengeUITests.xctest */,
+				5740A37B244FDBAE000DE932 /* ItauChallengeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -214,12 +302,10 @@
 		577BA023244E56A200CC02C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				577BA008244E487C00CC02C7 /* ViewController.swift */,
-				574BCAC4244F3DF9009D57E7 /* DetailTransactionViewController.swift */,
-				574BCACC244F6432009D57E7 /* MonthBalanceViewController.swift */,
-				5713AE8F244EB6A8005163D7 /* TableViewCell.swift */,
+				574BCAFA244FCB3B009D57E7 /* BalanceMonth */,
+				574BCAF9244FCB2D009D57E7 /* Detail */,
+				574BCAF8244FCB20009D57E7 /* Main */,
 				577BA024244E56B000CC02C7 /* Storyboard */,
-				574BCACE244F649F009D57E7 /* MonthBalanceTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,6 +340,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5740A37A244FDBAE000DE932 /* ItauChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5740A382244FDBAE000DE932 /* Build configuration list for PBXNativeTarget "ItauChallengeTests" */;
+			buildPhases = (
+				5740A377244FDBAE000DE932 /* Sources */,
+				5740A378244FDBAE000DE932 /* Frameworks */,
+				5740A379244FDBAE000DE932 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5740A381244FDBAE000DE932 /* PBXTargetDependency */,
+			);
+			name = ItauChallengeTests;
+			productName = ItauChallengeTests;
+			productReference = 5740A37B244FDBAE000DE932 /* ItauChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		574BCAD8244F7DF4009D57E7 /* ItauChallengeUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 574BCAE0244F7DF4009D57E7 /* Build configuration list for PBXNativeTarget "ItauChallengeUITests" */;
@@ -301,6 +405,10 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = daianne.gomes.aguiar;
 				TargetAttributes = {
+					5740A37A244FDBAE000DE932 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 577BA000244E487C00CC02C7;
+					};
 					574BCAD8244F7DF4009D57E7 = {
 						CreatedOnToolsVersion = 11.3.1;
 						TestTargetID = 577BA000244E487C00CC02C7;
@@ -325,11 +433,19 @@
 			targets = (
 				577BA000244E487C00CC02C7 /* ItauChallenge */,
 				574BCAD8244F7DF4009D57E7 /* ItauChallengeUITests */,
+				5740A37A244FDBAE000DE932 /* ItauChallengeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5740A379244FDBAE000DE932 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		574BCAD7244F7DF4009D57E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,18 +508,29 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5740A377244FDBAE000DE932 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5740A385244FDBFB000DE932 /* ViewControllerTest.swift in Sources */,
+				5740A38B244FDC0F000DE932 /* ModelMocks.swift in Sources */,
+				5740A38A244FDC0C000DE932 /* InteractorMock.swift in Sources */,
+				5740A37E244FDBAE000DE932 /* ItauChallengeTests.swift in Sources */,
+				5740A389244FDC09000DE932 /* PresenterMock.swift in Sources */,
+				5740A394244FE779000DE932 /* DetailTransactionViewControllerTest.swift in Sources */,
+				5740A387244FDC02000DE932 /* InteractorTest.swift in Sources */,
+				5740A390244FE197000DE932 /*  MonthBalanceViewControllerTest.swift in Sources */,
+				5740A388244FDC06000DE932 /* ViewControllerMock.swift in Sources */,
+				5740A386244FDBFE000DE932 /* PresenterTest.swift in Sources */,
+				5740A392244FE582000DE932 /* MonthBalanceTableViewCellTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		574BCAD5244F7DF4009D57E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				574BCAE5244F7E12009D57E7 /* ViewControllerTest.swift in Sources */,
-				574BCAF2244F806A009D57E7 /* ModelMocks.swift in Sources */,
-				574BCAF0244F7EFF009D57E7 /* InteractorMock.swift in Sources */,
 				574BCADC244F7DF4009D57E7 /* ItauChallengeUITests.swift in Sources */,
-				574BCAEE244F7ED9009D57E7 /* PresenterMock.swift in Sources */,
-				574BCAE9244F7E77009D57E7 /* InteractorTest.swift in Sources */,
-				574BCAEC244F7EAF009D57E7 /* ViewControllerMock.swift in Sources */,
-				574BCAE7244F7E68009D57E7 /* PresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +558,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5740A381244FDBAE000DE932 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 577BA000244E487C00CC02C7 /* ItauChallenge */;
+			targetProxy = 5740A380244FDBAE000DE932 /* PBXContainerItemProxy */;
+		};
 		574BCADF244F7DF4009D57E7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 577BA000244E487C00CC02C7 /* ItauChallenge */;
@@ -458,6 +590,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5740A383244FDBAE000DE932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 326DM67Y55;
+				INFOPLIST_FILE = ItauChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = accenture.com.ciclodevida.ItauChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ItauChallenge.app/ItauChallenge";
+			};
+			name = Debug;
+		};
+		5740A384244FDBAE000DE932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 326DM67Y55;
+				INFOPLIST_FILE = ItauChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = accenture.com.ciclodevida.ItauChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ItauChallenge.app/ItauChallenge";
+			};
+			name = Release;
+		};
 		574BCAE1244F7DF4009D57E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -651,6 +823,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5740A382244FDBAE000DE932 /* Build configuration list for PBXNativeTarget "ItauChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5740A383244FDBAE000DE932 /* Debug */,
+				5740A384244FDBAE000DE932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		574BCAE0244F7DF4009D57E7 /* Build configuration list for PBXNativeTarget "ItauChallengeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

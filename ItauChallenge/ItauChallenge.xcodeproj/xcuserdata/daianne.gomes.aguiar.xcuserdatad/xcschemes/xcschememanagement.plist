@@ -7,11 +7,33 @@
 		<key>ItauChallenge.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>0</integer>
+		</dict>
+		<key>ItauChallengeTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>ItauChallengeUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>5740A37A244FDBAE000DE932</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>574BCAD8244F7DF4009D57E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>577BA000244E487C00CC02C7</key>
 		<dict>
 			<key>primary</key>

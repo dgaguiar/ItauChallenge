@@ -13,9 +13,9 @@ class MonthBalanceTableViewCell: UITableViewCell {
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var monthValueLabel: UILabel!
     
-    func setupCell(viewModel: Balance) {
-        
-        print("veio na cell")
+    func setupCell(month: String, balanceValue: String) {
+        monthLabel.text = month
+        monthValueLabel.text = balanceValue
     }
     
 }

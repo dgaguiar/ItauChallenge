@@ -7,20 +7,18 @@
 //
 
 import UIKit
+import Foundation
 
 class TableViewCell: UITableViewCell {
     
     @IBOutlet weak var valuelabel: UILabel!
     @IBOutlet weak var originLabel: UILabel!
     @IBOutlet weak var categoryIcon: UIImageView!
-    @IBOutlet weak var monthLabel: UILabel!
     
     func setupCell(viewModel: TransactionViewModel.Items) {
         configValue(value: viewModel.value)
         configOrigin(origin: viewModel.origin)
         configIcon(category: viewModel.category)
-        monthLabel.text = viewModel.month
-        print("veio na cell")
     }
 
     private func configValue(value: String) {

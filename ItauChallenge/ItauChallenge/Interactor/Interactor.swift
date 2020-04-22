@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 protocol InteractorProtocol: class {
     func fetchTransactions()
     func goToMonthBalance()

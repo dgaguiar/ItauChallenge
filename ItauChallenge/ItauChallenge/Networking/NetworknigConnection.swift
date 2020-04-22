@@ -18,7 +18,6 @@ protocol Service {
 
 class ConnectionAPI : Service {
     
-    
     func connectTransaction(completion: @escaping ([TransactionListResponse]) -> Void ) {
         let endpoint = "https://desafio-it-server.herokuapp.com/lancamentos"
         
@@ -39,6 +38,7 @@ class ConnectionAPI : Service {
         }
     }
     
+    /// método nativo
     
     func fetchTransaction(completion: @escaping ([TransactionListResponse]) -> Void) {
         let url = URL(string: "https://desafio-it-server.herokuapp.com/lancamentos")!

@@ -38,6 +38,16 @@
                ReferencedContainer = "container:ItauChallenge.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5740A37A244FDBAE000DE932"
+               BuildableName = "ItauChallengeTests.xctest"
+               BlueprintName = "ItauChallengeTests"
+               ReferencedContainer = "container:ItauChallenge.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

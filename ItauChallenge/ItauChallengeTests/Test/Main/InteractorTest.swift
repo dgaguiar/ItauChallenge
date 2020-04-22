@@ -20,7 +20,8 @@ class InteractorTest: XCTestCase {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         spy = PresenterMock()
         sut = Interactor(presenter: spy)
-        sut.respository = ConnectionAPIMock()
+        repositoryMock = ConnectionAPIMock()
+        sut.respository = repositoryMock
     }
 
     override func tearDown() {
@@ -34,13 +35,13 @@ class InteractorTest: XCTestCase {
     func testFetchTransactions() {
         sut.fetchTransactions()
         
-        XCTAssertFalse(repositoryMock.connectTransactionCalled)
+        XCTAssertTrue(repositoryMock.connectTransactionCalled)
     }
     
     func testGoToMonthBalance() {
         sut.goToMonthBalance()
         
-        XCTAssertFalse(spy.presentBalanceMonthCalled)
+        XCTAssertTrue(spy.presentBalanceMonthCalled)
     }
     
 }

@@ -18,15 +18,12 @@ class Presenter: PresenterProtocol {
     
     weak var view: ViewControllerProtocol?
     private var viewModel: [TransactionViewModel] = []
-    private var jan = 0.0,fev = 0.0,mar = 0.0,abr = 0.0,mai = 0.0,jun = 0.0,
-    jul = 0.0,ago = 0.0,set = 0.0,out = 0.0,nov = 0.0,dez = 0.0
      
      init(view: ViewControllerProtocol) {
          self.view = view
      }
     
     func presentViewModel(model: [TransactionListResponse], categories: [CategoryResponse]) {
-        //OrderArray by month
         let array = model
         let orderArray = array.sorted(by: { $0.month < $1.month })
         
@@ -42,6 +39,7 @@ class Presenter: PresenterProtocol {
         
         for transaction in monthAgroup {
             var transactionItem: [TransactionViewModel.Items] = []
+            var acumualteBalance: Double = 0.0
             for items in transaction.transctionsItems {
                 let id = items.id
                 let value = configValue(value: items.value)
@@ -50,19 +48,18 @@ class Presenter: PresenterProtocol {
                 let month = configMonth(month: items.month)
                 
                 transactionItem.append(TransactionViewModel.Items(month: month, id: id, value: value, origin: origin, category: category))
-            
+                acumualteBalance += items.value
             }
             let monthName = configMonth(month: transaction.monthName)
-            viewModel.append(TransactionViewModel(monthName: monthName, transactionItems: transactionItem))
+            let balanceMonth = configValue(value: acumualteBalance)
+            viewModel.append(TransactionViewModel(monthName: monthName, acumulate: balanceMonth, transactionItems: transactionItem))
         }
         
         view?.displayOrderByMonth(viewModel: viewModel)
     }
     
     func presentBalanceMonth() {
-
-        let balance = Balance(jan: jan, fev: fev, mar: mar, mai: mai, jun: jun, jul: jul, ago: ago, set: set, out: out, nov: nov, dez: dez)
-        view?.displayBalanceMonth(monthModel: balance)
+        view?.displayBalanceMonth(monthModel: viewModel)
     }
     
     private func configValue(value: Double) -> String {
@@ -71,6 +68,7 @@ class Presenter: PresenterProtocol {
         formatter.locale = locale
         formatter.numberStyle = .currency
         guard let formattedTipAmount = formatter.string(from: value as NSNumber) else { return ""}
+        
         return formattedTipAmount
     }
     
@@ -87,58 +85,32 @@ class Presenter: PresenterProtocol {
     private func configMonth(month: Int) -> String {
         switch month {
         case 1:
-//            jan += value
             return "Janeiro"
         case 2:
-//            fev += value
             return "Fevereiro"
         case 3:
-//            mar += value
             return "Março"
         case 4:
-//            abr += value
             return "Abril"
         case 5:
-//            mai += value
             return "Maio"
         case 6:
-//            jun += value
             return "Junho"
         case 7:
-//            jul += value
             return "Julho"
         case 8:
-//            ago += value
             return "Agosto"
         case 9:
-//            set += value
             return "Setembro"
         case 10:
-//            out += value
             return "Outubro"
         case 11:
-//            nov += value
             return "Novembro"
         case 12:
-//            dez += value
             return "Dezembro"
         default:
             return "MES"
         }
         
     }
-}
-
-struct Balance {
-    let jan: Double
-    let fev: Double
-    let mar: Double
-    let mai: Double
-    let jun: Double
-    let jul: Double
-    let ago: Double
-    let set: Double
-    let out: Double
-    let nov: Double
-    let dez: Double
 }

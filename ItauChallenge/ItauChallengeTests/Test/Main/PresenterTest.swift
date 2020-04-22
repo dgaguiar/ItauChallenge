@@ -32,7 +32,13 @@ class PresenterTest: XCTestCase {
     func testPresentViewModel() {
         sut.presentViewModel(model: [TransactionListResponse.mock()], categories: [CategoryResponse.mock()])
         
-        XCTAssertFalse(spy.displayOrderByMonthCalled)
+        XCTAssertTrue(spy.displayOrderByMonthCalled)
+    }
+    
+    func testPresentBalanceMonth() {
+        sut.presentBalanceMonth()
+        
+        XCTAssertTrue(spy.displayOrderByMonthCalled)
     }
     
 

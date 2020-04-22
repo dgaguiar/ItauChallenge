@@ -10,7 +10,7 @@ import UIKit
 
 protocol ViewControllerProtocol: class {
     func displayOrderByMonth(viewModel: [TransactionViewModel])
-    func displayBalanceMonth(monthModel: Balance) 
+    func displayBalanceMonth(monthModel: [TransactionViewModel]) 
 }
 
 class ViewController: UIViewController, ViewControllerProtocol {
@@ -21,6 +21,7 @@ class ViewController: UIViewController, ViewControllerProtocol {
     
     var interactor: InteractorProtocol?
     var model: [TransactionViewModel] = []
+    
     // MARK: Constructors
     
     init(interactor: InteractorProtocol){
@@ -69,11 +70,11 @@ class ViewController: UIViewController, ViewControllerProtocol {
         print(viewModel)
     }
     
-    func displayBalanceMonth(monthModel: Balance) {
+    func displayBalanceMonth(monthModel: [TransactionViewModel]) {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "MonthBalanceViewController") as? MonthBalanceViewController {
-            controller.model = [monthModel]
+            controller.model = monthModel
             self.navigationController?.pushViewController(controller, animated: true)
         }
     }
@@ -112,6 +113,10 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 20 
+        return 30
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return model[section].monthName
     }
 }

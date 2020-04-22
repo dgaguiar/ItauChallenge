@@ -10,21 +10,17 @@ import Foundation
 @testable import ItauChallenge
 
 class ViewControllerMock: ViewControllerProtocol {
-    func displayOrderByMonth(viewModel: [TransactionGroup]) {
-        //
-    }
+   
     
-    
+ 
     var displayOrderByMonthCalled = false
     var displayBalanceMonthCalled = false
-    
+   
     func displayOrderByMonth(viewModel: [TransactionViewModel]) {
-        displayOrderByMonthCalled = true
-    }
+           displayOrderByMonthCalled = true
+       }
     
-    func displayBalanceMonth(monthModel: Balance) {
-        displayBalanceMonthCalled = true
-    }
-    
-    
+    func displayBalanceMonth(monthModel: [TransactionViewModel]) {
+         displayOrderByMonthCalled = true
+     }
 }

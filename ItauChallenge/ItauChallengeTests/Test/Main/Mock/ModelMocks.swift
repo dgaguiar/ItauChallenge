@@ -9,7 +9,6 @@
 import Foundation
 @testable import ItauChallenge
 
-
 class ConnectionAPIMock: Service {
     
     var fetchTransactionCalled = false
@@ -30,10 +29,9 @@ class ConnectionAPIMock: Service {
     
 }
 
-
 extension TransactionListResponse {
     static func mock() -> TransactionListResponse {
-        return TransactionListResponse(id: 0, value: 12.3, origin: "lojas", category: 2, mounth: 3)
+        return TransactionListResponse(id: 0, value: 12.3, origin: "lojas", category: 2, month: 3)
     }
 }
 
@@ -42,3 +40,4 @@ extension CategoryResponse {
         return CategoryResponse(id: 0, name: "Transporte")
     }
 }
+

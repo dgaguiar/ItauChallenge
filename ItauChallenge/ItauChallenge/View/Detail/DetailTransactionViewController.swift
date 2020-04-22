@@ -27,7 +27,7 @@ class DetailTransactionViewController: UIViewController {
         guard let model = model else { return }
         valueLabel.text = model.value
         originLabel.text = model.origin
-        monthLabel.text = "Mês: \(model.month)"
+        monthLabel.text = "\(model.month)"
         categoryLabel.text = model.category
     }
     

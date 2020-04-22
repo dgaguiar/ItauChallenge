@@ -8,15 +8,15 @@
 
 struct TransactionViewModel {
     struct Items {
-         let month: String
-           let id: Int
-           let value: String
-           let origin: String
-           let category: String
+        let month: String
+        let id: Int
+        let value: String
+        let origin: String
+        let category: String
     }
     let monthName: String
+    let acumulate: String
     let transactionItems: [Items]
-
 }
 
 struct TransactionGroup {

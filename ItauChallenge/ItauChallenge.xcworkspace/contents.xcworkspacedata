@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Empty.swift">
+   </FileRef>
+   <FileRef
       location = "group:ItauChallenge.xcodeproj">
    </FileRef>
    <FileRef
