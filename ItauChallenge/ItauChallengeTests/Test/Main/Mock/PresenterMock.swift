@@ -10,9 +10,11 @@ import Foundation
 @testable import ItauChallenge
 
 class PresenterMock: PresenterProtocol {
-    
+
     var presentViewModelCalled = false
     var presentBalanceMonthCalled = false
+    var presentReloadAllMonthCalled = false
+    var presentFilterByMonthCalled = false
     
     func presentViewModel(model: [TransactionListResponse], categories: [CategoryResponse]) {
         presentViewModelCalled = true
@@ -20,6 +22,14 @@ class PresenterMock: PresenterProtocol {
     
     func presentBalanceMonth() {
         presentBalanceMonthCalled = true
+    }
+    
+    func presentReloadAllMonth() {
+        presentReloadAllMonthCalled = true
+    }
+    
+    func presentFilterByMonth(month: String) {
+        presentFilterByMonthCalled = true
     }
 
 }

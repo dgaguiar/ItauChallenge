@@ -12,6 +12,8 @@ import UIKit
 protocol PresenterProtocol: class {
     func presentViewModel(model: [TransactionListResponse], categories: [CategoryResponse])
     func presentBalanceMonth()
+    func presentReloadAllMonth()
+    func presentFilterByMonth(month: String)
 }
 
 class Presenter: PresenterProtocol {
@@ -60,6 +62,26 @@ class Presenter: PresenterProtocol {
     
     func presentBalanceMonth() {
         view?.displayBalanceMonth(monthModel: viewModel)
+    }
+    
+    func presentReloadAllMonth() {
+        view?.displayOrderByMonth(viewModel: viewModel)
+    }
+    
+    func presentFilterByMonth(month: String) {
+        guard let monthInt = Int(month) else { return }
+        let monthFormatter = configMonth(month: monthInt)
+        let modelFilterMonth = viewModel.filter({ return $0.monthName == monthFormatter })
+        
+        if modelFilterMonth.isEmpty {
+            let title = "Hey"
+            let message = "Você não possui lançamentos em \(monthFormatter)"
+            let buttonText = "Entendi"
+            view?.displayNotTransactionsAlert(title: title, message: message, buttonText: buttonText)
+        } else {
+             view?.displayFilterByMonth(monthModel: modelFilterMonth)
+        }
+       
     }
     
     private func configValue(value: Double) -> String {
