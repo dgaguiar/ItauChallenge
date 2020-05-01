@@ -22,4 +22,4 @@ Este aplicativo possui:
 
 # Imagens 
 
-<img src="SreenShots/MainScreenTimeLine.png" width="200"><img src="SreenShots/FilterTransaction.png" width="200"><img src="SreenShots/DetailTransactionScreen.png" width="200"><img src="SreenShots/BalaceMonthScreen.png" width="200">
+<img src="SreenShots/MainScreenTimeLine.png" width="200">.  .<img src="SreenShots/FilterTransaction.png" width="200">.  .<img src="SreenShots/DetailTransactionScreen.png" width="200">.  .<img src="SreenShots/BalaceMonthScreen.png" width="200">
