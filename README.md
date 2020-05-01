@@ -20,3 +20,6 @@ Este aplicativo possui:
 - Possui um filtro de transações por mês; 
 - Apresenta balanço de gastos por mês.
 
+# Imagens 
+
+<img src="SreenShots/MainScreenTimeLine.png" width="200"><img src="SreenShots/FilterTransaction.png" width="200"><img src="SreenShots/DetailTransactionScreen.png" width="200"><img src="SreenShots/BalaceMonthScreen.png" width="200">
