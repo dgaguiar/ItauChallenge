@@ -25,13 +25,13 @@ class Interactor: InteractorProtocol {
     }
     
     func fetchTransactions() {
-        respository.connectTransaction(completion:  ({ Movimentacao in
+        respository.fetchTransaction(completion:  ({ Movimentacao in
             self.fetchlancamentos(model: Movimentacao)
         }))
     }
     
     private func fetchlancamentos(model: [TransactionListResponse]) {
-        respository.connectCategory(completion:  ({ Category  in
+        respository.fetchCategory(completion:  ({ Category  in
             self.presenter?.presentViewModel(model: model, categories: Category)
         }))
     }

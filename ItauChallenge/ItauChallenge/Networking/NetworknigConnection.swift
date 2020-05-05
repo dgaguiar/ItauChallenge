@@ -12,11 +12,14 @@ import Alamofire
 
 protocol Service {
     func fetchTransaction(completion: @escaping ([TransactionListResponse]) -> Void)
+    func fetchCategory(completion: @escaping ([CategoryResponse]) -> Void)
     func connectTransaction(completion: @escaping ([TransactionListResponse]) -> Void )
     func connectCategory(completion: @escaping ([CategoryResponse]) -> Void )
 }
 
 class ConnectionAPI : Service {
+
+    /// método com Framework - Alamofire
     
     func connectTransaction(completion: @escaping ([TransactionListResponse]) -> Void ) {
         let endpoint = "https://desafio-it-server.herokuapp.com/lancamentos"
@@ -38,7 +41,7 @@ class ConnectionAPI : Service {
         }
     }
     
-    /// método nativo
+    /// método Nativo
     
     func fetchTransaction(completion: @escaping ([TransactionListResponse]) -> Void) {
         let url = URL(string: "https://desafio-it-server.herokuapp.com/lancamentos")!
@@ -46,18 +49,23 @@ class ConnectionAPI : Service {
         let request = URLRequest(url: url)
         let task = session.dataTask(with: request as URLRequest, completionHandler: { data, response, error in
             guard error == nil else {
+                print(error?.localizedDescription ?? "Check your connections")
                 return
             }
             guard let data = data else {
                 return
             }
             do {
-                 let decoder = JSONDecoder()
-                 let response = try decoder.decode([TransactionListResponse].self, from: data)
-                 completion(response)
-
+                let decoder = JSONDecoder()
+                let response = try decoder.decode([TransactionListResponse].self, from: data)
+                DispatchQueue.main.async {
+                    completion(response)
+                }
+                
             } catch {
-                print(error)
+                DispatchQueue.main.async {
+                    print(error)
+                }
             }
         })
         task.resume()
@@ -77,10 +85,14 @@ class ConnectionAPI : Service {
             do {
                  let decoder = JSONDecoder()
                  let response = try decoder.decode([CategoryResponse].self, from: data)
-                 completion(response)
-
+                DispatchQueue.main.async {
+                    completion(response)
+                }
+                
             } catch {
-                print(error)
+                DispatchQueue.main.async {
+                    print(error)
+                }
             }
         })
         task.resume()
