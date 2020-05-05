@@ -25,15 +25,23 @@ class Interactor: InteractorProtocol {
     }
     
     func fetchTransactions() {
-        respository.fetchTransaction(completion:  ({ Movimentacao in
-            self.fetchlancamentos(model: Movimentacao)
-        }))
+        respository.fetchTransaction { (Movimentacao, error) in
+            if let error = error {
+                self.presenter?.presentErrorView(error: error.localizedDescription)
+            } else {
+                self.fetchlancamentos(model: Movimentacao!)
+            }
+        }
     }
     
     private func fetchlancamentos(model: [TransactionListResponse]) {
-        respository.fetchCategory(completion:  ({ Category  in
-            self.presenter?.presentViewModel(model: model, categories: Category)
-        }))
+        respository.fetchCategory{ (Category, error)  in
+            if let error = error {
+                self.presenter?.presentErrorView(error: error.localizedDescription)
+            } else {
+                self.presenter?.presentViewModel(model: model, categories: Category!)
+            }
+        }
     }
     
     func reloadAllMonth() {

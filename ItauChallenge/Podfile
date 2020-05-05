@@ -3,9 +3,7 @@
 # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-target 'ItauChallenge' do
-  
-  pod 'Alamofire', '~> 5.1'	
+target 'ItauChallenge' do	
 	
   # Pods for ItauChallenge
 

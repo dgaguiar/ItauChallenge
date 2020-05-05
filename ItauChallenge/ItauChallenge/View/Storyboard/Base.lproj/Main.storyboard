@@ -325,6 +325,55 @@
                                             </view>
                                         </subviews>
                                     </stackView>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BZa-EC-mYZ">
+                                        <rect key="frame" x="0.0" y="125" width="414" height="72"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="hgZ-ok-Tph">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wco-DK-qlS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="24"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="24" id="rgI-Ah-IL1"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3k-s3-c4S">
+                                                        <rect key="frame" x="0.0" y="40" width="414" height="0.0"/>
+                                                        <color key="tintColor" red="0.50196078430000002" green="0.72941176470000002" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <state key="normal" image="xmark.shield" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                            </preferredSymbolConfiguration>
+                                                        </state>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desculpe algo aonteceu!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIY-dk-4Wp">
+                                                        <rect key="frame" x="0.0" y="56" width="414" height="0.0"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.50443469119999995" green="0.7299928617" blue="0.33290197090000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajt-oz-Jsv">
+                                                        <rect key="frame" x="0.0" y="72" width="414" height="0.0"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                        <state key="normal" title="Tentar novamente">
+                                                            <color key="titleColor" red="0.50196078430000002" green="0.72941176470000002" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="tryAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tMG-i7-XiN"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="hgZ-ok-Tph" secondAttribute="trailing" id="2MT-lq-EkB"/>
+                                            <constraint firstItem="hgZ-ok-Tph" firstAttribute="top" secondItem="BZa-EC-mYZ" secondAttribute="top" id="T92-bf-KhT"/>
+                                            <constraint firstItem="hgZ-ok-Tph" firstAttribute="leading" secondItem="BZa-EC-mYZ" secondAttribute="leading" id="Uhh-PP-1eE"/>
+                                            <constraint firstAttribute="bottom" secondItem="hgZ-ok-Tph" secondAttribute="bottom" id="d0E-zE-g0E"/>
+                                        </constraints>
+                                    </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tor-1R-mbA">
                                         <rect key="frame" x="0.0" y="125" width="414" height="693"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -421,6 +470,8 @@
                     <navigationItem key="navigationItem" id="yb0-2J-nWy"/>
                     <connections>
                         <outlet property="balanceLabel" destination="0BC-ud-cNS" id="mc4-fC-70C"/>
+                        <outlet property="errorMessageLabel" destination="RIY-dk-4Wp" id="1Ma-Jn-PMi"/>
+                        <outlet property="errorView" destination="BZa-EC-mYZ" id="fgI-1s-g3f"/>
                         <outlet property="filterView" destination="Kvp-Lz-LXa" id="50c-ar-fcW"/>
                         <outlet property="tableView" destination="tor-1R-mbA" id="FlL-Ii-IH4"/>
                         <outlet property="titleLabel" destination="S9g-F3-6Mh" id="XMR-cc-fzS"/>
@@ -732,5 +783,6 @@
         <image name="goforward.plus" catalog="system" width="60" height="64"/>
         <image name="plus" catalog="system" width="64" height="56"/>
         <image name="wallet" width="410" height="410"/>
+        <image name="xmark.shield" catalog="system" width="64" height="60"/>
     </resources>
 </document>

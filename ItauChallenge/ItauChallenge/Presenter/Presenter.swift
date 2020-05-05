@@ -14,6 +14,7 @@ protocol PresenterProtocol: class {
     func presentBalanceMonth()
     func presentReloadAllMonth()
     func presentFilterByMonth(month: String)
+    func presentErrorView(error: String)
 }
 
 class Presenter: PresenterProtocol {
@@ -82,6 +83,10 @@ class Presenter: PresenterProtocol {
              view?.displayFilterByMonth(monthModel: modelFilterMonth)
         }
        
+    }
+    
+    func presentErrorView(error: String) {
+        view?.displayErrorView(errorMessage: error)
     }
     
     private func configValue(value: Double) -> String {

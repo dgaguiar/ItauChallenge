@@ -13,6 +13,7 @@ protocol ViewControllerProtocol: class {
     func displayBalanceMonth(monthModel: [TransactionViewModel])
     func displayFilterByMonth(monthModel: [TransactionViewModel])
     func displayNotTransactionsAlert(title: String, message: String, buttonText: String)
+    func displayErrorView(errorMessage: String)
 }
 
 class ViewController: UIViewController, ViewControllerProtocol {
@@ -21,6 +22,9 @@ class ViewController: UIViewController, ViewControllerProtocol {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var balanceLabel: UILabel!
     @IBOutlet weak var filterView: UIView!
+    
+    @IBOutlet weak var errorView: UIView!
+    @IBOutlet weak var errorMessageLabel: UILabel!
     
     var interactor: InteractorProtocol?
     var model: [TransactionViewModel] = []
@@ -81,6 +85,10 @@ class ViewController: UIViewController, ViewControllerProtocol {
         interactor?.getMonthTofilter(month: label ?? "erro")
     }
     
+    @IBAction func tryAgain(_ sender: UIButton) {
+        interactor?.fetchTransactions()
+    }
+    
     
     func setupHeader() {
         titleLabel.text = "my balance"
@@ -94,6 +102,7 @@ class ViewController: UIViewController, ViewControllerProtocol {
     
     func displayOrderByMonth(viewModel: [TransactionViewModel]) {
         self.model = viewModel
+        self.errorView.isHidden = true
         tableView.reloadData()
     }
     
@@ -109,6 +118,11 @@ class ViewController: UIViewController, ViewControllerProtocol {
     func displayFilterByMonth(monthModel: [TransactionViewModel]) {
         self.model = monthModel
         tableView.reloadData()
+    }
+    
+    func displayErrorView(errorMessage: String) {
+        self.errorView.isHidden = false
+        self.errorMessageLabel.text = errorMessage
     }
     
     func displayNotTransactionsAlert(title: String, message: String, buttonText: String) {
